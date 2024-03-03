@@ -2,14 +2,25 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        //generics = enables types(classes and interfaces) to be parameters when defining
+        //           classes, interfaces and methods
+        //           a benefit is to eliminate the need to create multiple versions
+        //           of methods or classes for various data types
+        //           Use 1 version for all reference data types
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        Integer[] intArray = {1, 2, 3, 4, 5};
+        Double[] doubleArray = {5.5, 4.4, 3.3, 2.2, 1.1};
+        Character[] charArray = {'H', 'E', 'L', 'L', 'O'};
+        String[] stringArray = {"B", "Y", "E"};
+
     }
+
+        public static  void displayArray(Double[] array){
+            for(Double x :array){
+                System.out.println(x+ " ");
+            }
+            System.out.println();
+        }
+
+
 }
